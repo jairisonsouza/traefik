@@ -101,7 +101,7 @@ docker stack deploy -c docker-compose.yml traefik
 
 * Com o Portainer (recomendado):
 
-Obs.: É necessário instalar o portainer antes. Saiba mais em: https://repo.detran.ap.gov.br/DTIC/portainer. 
+Obs.: É necessário instalar o portainer antes. Saiba mais em: https://github.com/jairisonsouza/portainer.git. 
 
 1. No menu lateral esquerdo, acesse a opção "Stacks";
 2. Clique no botão "+ Add Stack";
