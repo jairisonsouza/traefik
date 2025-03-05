@@ -73,6 +73,7 @@ services:
         published: 443
         mode: ingress
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - "traefik-data:/letsencrypt"
     networks:
       - portainer-net
@@ -99,7 +100,7 @@ networks:
 docker stack deploy -c docker-compose.yml traefik
 ```
 
-* Com o Portainer (recomendado):
+* Com o Portainer:
 
 Obs.: É necessário instalar o portainer antes. Saiba mais em: https://github.com/jairisonsouza/portainer.git. 
 
