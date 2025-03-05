@@ -27,6 +27,7 @@ services:
         published: 443
         mode: ingress
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - "traefik-data:/letsencrypt"
     networks:
       - portainer-net
