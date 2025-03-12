@@ -35,9 +35,7 @@ docker swarm init --advertise-addr <IP DA MAQUINA>
 Crie as redes definidas no arquivo `docker-compose.yml` com os comandos:
 
 ```
-docker network create --driver overlay portainer-net --attachable
-docker network create --driver overlay jenkins-net --attachable
-docker network create --driver overlay gitlab-net --attachable
+docker network create --driver overlay traefik-net --attachable
 ```
 Obs.: Acesse o arquivo `docker-compose.yml` para certificar o nome de todas as redes necessárias para criação. 
 
