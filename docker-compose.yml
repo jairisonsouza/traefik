@@ -30,17 +30,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - "traefik-data:/letsencrypt"
     networks:
-      - portainer-net
-      - jenkins-net
-      - gitlab-net
+      - traefik-net
 
 volumes:
   traefik-data:
 
 networks:
-  portainer-net:
-    external: true
-  jenkins-net:
-    external: true
-  gitlab-net:
+  traefik-net:
     external: true
