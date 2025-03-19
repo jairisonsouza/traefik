@@ -37,7 +37,6 @@ Crie as redes definidas no arquivo `docker-compose.yml` com os comandos:
 ```
 docker network create --driver overlay traefik-net --attachable
 ```
-Obs.: Acesse o arquivo `docker-compose.yml` para certificar o nome de todas as redes necessárias para criação. 
 
 Caso necessário, ajuste o arquivo `docker-compose.yml`:
 
