@@ -28,7 +28,7 @@ services:
         mode: ingress
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - "traefik-data:/letsencrypt"
+      - traefik-data:/letsencrypt
     networks:
       - traefik-net
 
